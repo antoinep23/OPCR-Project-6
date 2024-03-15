@@ -9,7 +9,6 @@ const data = []
 const dataWorks = async () => {
     return await fetch('http://localhost:5678/api/works')
         .then((res) => res.json())
-        .then((data) => data);
 }
 
 dataWorks()
@@ -21,6 +20,9 @@ dataWorks()
             figure += `<figure><img src='${data[i].imageUrl}' alt='${data[i].title}'><figcaption>${data[i].title}</figcaption></figure>`
         }
         gallery.innerHTML = figure
-        console.log(figure)
     }) 
 
+
+fetch('http://localhost:5678/api/works')
+.then((res) => res.json())
+.then ((x) => console.log(x))
