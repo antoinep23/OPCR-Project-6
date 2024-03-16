@@ -36,7 +36,7 @@ dataWorks()
 
 // Filtrer
 const figureFiltred = (index) => {
-    const filteredData = data.filter(item => item.categoryId === index);
+    const filteredData = data.filter(item => item.categoryId === index)
     return filteredData.map(item => `<figure><img src='${item.imageUrl}' alt='${item.title}'><figcaption>${item.title}</figcaption></figure>`).join('')
 }
 

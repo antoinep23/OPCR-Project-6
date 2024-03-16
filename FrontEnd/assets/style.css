@@ -95,7 +95,7 @@ nav li {
 	font-size: 1.2em;
 }
 
-li:hover {
+li:hover, a:hover {
 	color: #B1663C;
 }
 #introduction {
@@ -209,4 +209,64 @@ footer nav ul {
 .filters__btn--active {
 	background-color: #1D6154;
 	color: white;
+}
+
+/* Login */
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.login--bold{
+	font-weight: bolder;
+}
+
+.login{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 60vh;
+	gap: 2rem;
+	margin-bottom: 6rem;
+}
+
+.login__title {
+	font-family: 'Syne';
+	color: #1D6154;
+	font-weight: 700;
+}
+
+.login__input{
+	background: #FFF;
+	box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.09);
+	width: 24rem;
+	height: 3.2rem;
+	border: none;
+	padding-left: 1rem;
+	font-size: 12pt;
+}
+
+.login__input:focus {
+	outline: none;
+}
+
+.login__input--label {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+}
+
+.login__btn {
+	border-radius: 3.75rem;
+	background: #1D6154;
+	color: white;
+	width: 11rem;
+	height: 2.25rem;
+	border: none;
+	cursor: pointer;
+}
+
+.login__forgot {
+	text-decoration: underline;
 }
