@@ -93,6 +93,7 @@ nav ul {
 nav li {
 	padding: 0 10px;
 	font-size: 1.2em;
+	cursor: pointer;
 }
 
 li:hover, a:hover {
@@ -212,11 +213,6 @@ footer nav ul {
 }
 
 /* Login */
-a {
-	color: black;
-	text-decoration: none;
-}
-
 .login--bold{
 	font-weight: bolder;
 }
@@ -261,12 +257,13 @@ a {
 	border-radius: 3.75rem;
 	background: #1D6154;
 	color: white;
-	width: 11rem;
-	height: 2.25rem;
+	width: 10rem;
+	padding: 0.5rem;
 	border: none;
 	cursor: pointer;
 }
 
 .login__forgot {
 	text-decoration: underline;
+	color: black;
 }
